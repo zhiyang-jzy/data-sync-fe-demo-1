@@ -10,18 +10,18 @@ export default function App() {
 
     console.log('test');
     useEffect(() => {
-        // bitable.getConfig().then(config => {
-        //     console.log('pre sync config', config);
-        //     setValue(config?.value || '');
-        // });
-        // bitable.getUserId().then(id => {
-        //     console.log('userId', id);
-        //     setUserId(id);
-        // });
-        // bitable.getTenantKey().then(key => {
-        //     console.log('tenantKey', key);
-        //     setTenantKey(key);
-        // })
+        bitable.getConfig().then(config => {
+            console.log('pre sync config', config);
+            setValue(config?.value || '');
+        });
+        bitable.getUserId().then(id => {
+            console.log('userId', id);
+            setUserId(id);
+        });
+        bitable.getTenantKey().then(key => {
+            console.log('tenantKey', key);
+            setTenantKey(key);
+        })
     }, [])
 
     const handleSaveConfig = (config:any) => {
