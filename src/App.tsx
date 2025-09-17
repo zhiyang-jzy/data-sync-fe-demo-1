@@ -41,8 +41,8 @@ export default function App() {
                 autoComplete="off"
             >
                 <Form.Item
-                    label="配置项-1"
-                    name="config-item-1"
+                    label="token"
+                    name="token"
                 >
                     <Input />
                 </Form.Item>
